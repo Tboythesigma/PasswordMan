@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PasswordMan - Download</title>
+<style>
+    /* Resetting some default styles */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* Background and fonts */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #0a0c10;
+        color: #e0e0e0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    /* Main container style */
+    .container {
+        text-align: center;
+        background: linear-gradient(145deg, #1b1f27, #101419);
+        padding: 40px;
+        border-radius: 15px;
+        box-shadow: 0px 10px 20px rgba(0, 255, 255, 0.2), inset 0px 0px 15px rgba(0, 255, 255, 0.1);
+        max-width: 400px;
+        width: 90%;
+    }
+
+    /* Title style */
+    h1 {
+        font-size: 2em;
+        color: #00ffff;
+        text-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
+    }
+
+    /* Description text style */
+    p {
+        margin-top: 10px;
+        font-size: 1em;
+        color: #bbbbbb;
+        line-height: 1.5;
+    }
+
+    /* Download button style */
+    .download-btn {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 12px 24px;
+        font-size: 1em;
+        font-weight: bold;
+        color: #0a0c10;
+        background: linear-gradient(145deg, #00ffff, #00b3b3);
+        border-radius: 8px;
+        box-shadow: 0px 8px 15px rgba(0, 255, 255, 0.4), inset 0px 0px 10px rgba(0, 0, 0, 0.3);
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+
+    /* Button hover effect */
+    .download-btn:hover {
+        color: #00ffff;
+        background: #0a0c10;
+        box-shadow: 0px 8px 20px rgba(0, 255, 255, 0.7), inset 0px 0px 10px rgba(0, 255, 255, 0.2);
+    }
+
+    /* Subtle animation effect */
+    .container::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 500px;
+        height: 500px;
+        background: radial-gradient(circle, rgba(0, 255, 255, 0.3), transparent);
+        transform: translate(-50%, -50%);
+        z-index: -1;
+        animation: pulse 3s infinite;
+    }
+
+    /* Pulse animation */
+    @keyframes pulse {
+        0%, 100% {
+            opacity: 0.6;
+            transform: translate(-50%, -50%) scale(1);
+        }
+        50% {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1.1);
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Download PasswordMan</h1>
+    <p>Securely manage your passwords with advanced encryption and a modern, easy-to-use interface.</p>
+    <a href="download/PasswordMan_installer.exe" class="download-btn">Download Now</a>
+</div>
+
+</body>
+</html>
